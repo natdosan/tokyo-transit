@@ -560,7 +560,7 @@ var app = (function () {
     			p0.textContent = "Have you ever gotten lost in a massive city and couldn't find the closest train station to get to your next destination? \n      Well, we got the solution for you! Introducing the Tokyo Map! Our motivation for this visualization is to provide the user \n      an easy-to-use map with customization, giving the user a map with plenty of digestible information while keeping it clear and understandable.\n      We provided togglable metro stations, metro lines, as well as population ridership through geoJSON data with the click of a button; \n      specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth.";
     			t3 = text("\n    ");
     			a = element("a");
-    			a.textContent = "https://youtu.be/-xUU2ivSLd4";
+    			a.textContent = "https://www.youtube.com/watch?v=-xUU2ivSLd4";
     			t5 = space();
     			div9 = element("div");
     			div1 = element("div");
@@ -603,7 +603,7 @@ var app = (function () {
     			t28 = text(t28_value);
     			add_location(h1, file, 252, 4, 7715);
     			add_location(p0, file, 253, 4, 7781);
-    			attr_dev(a, "href", "https://youtu.be/-xUU2ivSLd4");
+    			attr_dev(a, "href", "https://www.youtube.com/watch?v=-xUU2ivSLd4");
     			attr_dev(a, "target", "_blank");
     			add_location(a, file, 259, 4, 8494);
     			attr_dev(div0, "id", "top-text");
@@ -615,41 +615,41 @@ var app = (function () {
 
     			add_location(div0, file, 251, 2, 7608);
     			attr_dev(button0, "class", "toggle-button svelte-1777uii");
-    			add_location(button0, file, 266, 6, 8718);
+    			add_location(button0, file, 266, 6, 8748);
     			attr_dev(button1, "class", "toggle-button svelte-1777uii");
-    			add_location(button1, file, 269, 6, 8879);
+    			add_location(button1, file, 269, 6, 8909);
     			attr_dev(button2, "class", "toggle-button svelte-1777uii");
-    			add_location(button2, file, 272, 6, 9032);
+    			add_location(button2, file, 272, 6, 9062);
     			attr_dev(button3, "class", "toggle-button svelte-1777uii");
-    			add_location(button3, file, 275, 6, 9193);
+    			add_location(button3, file, 275, 6, 9223);
     			attr_dev(div1, "class", "toggle-button-container svelte-1777uii");
-    			add_location(div1, file, 265, 4, 8674);
+    			add_location(div1, file, 265, 4, 8704);
     			attr_dev(div2, "class", "legend-item svelte-1777uii");
     			set_style(div2, "background-color", "#ffffff");
-    			add_location(div2, file, 281, 6, 9388);
+    			add_location(div2, file, 281, 6, 9418);
     			attr_dev(div3, "class", "legend-item svelte-1777uii");
     			set_style(div3, "background-color", "#614144");
-    			add_location(div3, file, 282, 6, 9462);
+    			add_location(div3, file, 282, 6, 9492);
     			attr_dev(div4, "class", "legend-item svelte-1777uii");
     			set_style(div4, "background-color", "#802A37");
-    			add_location(div4, file, 283, 6, 9542);
+    			add_location(div4, file, 283, 6, 9572);
     			attr_dev(div5, "class", "legend-item svelte-1777uii");
     			set_style(div5, "background-color", "#A51C2A");
-    			add_location(div5, file, 284, 6, 9622);
+    			add_location(div5, file, 284, 6, 9652);
     			attr_dev(div6, "class", "legend-item svelte-1777uii");
     			set_style(div6, "background-color", "#DE0D0D");
-    			add_location(div6, file, 285, 6, 9702);
+    			add_location(div6, file, 285, 6, 9732);
     			attr_dev(div7, "class", "legend-item svelte-1777uii");
     			set_style(div7, "background-color", "#FF9641");
-    			add_location(div7, file, 286, 6, 9782);
+    			add_location(div7, file, 286, 6, 9812);
     			attr_dev(div8, "class", "legend svelte-1777uii");
-    			add_location(div8, file, 280, 4, 9361);
+    			add_location(div8, file, 280, 4, 9391);
     			attr_dev(div9, "id", "map-tokyo");
     			attr_dev(div9, "class", "svelte-1777uii");
-    			add_location(div9, file, 263, 2, 8619);
-    			add_location(p1, file, 294, 4, 10022);
+    			add_location(div9, file, 263, 2, 8649);
+    			add_location(p1, file, 294, 4, 10052);
     			attr_dev(button4, "class", "toggle-button svelte-1777uii");
-    			add_location(button4, file, 306, 4, 11848);
+    			add_location(button4, file, 306, 4, 11878);
     			attr_dev(div10, "id", "bottom-text");
     			attr_dev(div10, "class", "bottom-text svelte-1777uii");
 
@@ -657,7 +657,7 @@ var app = (function () {
     			? 'display: block;'
     			: 'display: none;');
 
-    			add_location(div10, file, 293, 2, 9906);
+    			add_location(div10, file, 293, 2, 9936);
     			attr_dev(div11, "class", "main-content svelte-1777uii");
     			add_location(div11, file, 249, 0, 7559);
     		},
