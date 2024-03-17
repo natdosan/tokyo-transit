@@ -146,12 +146,6 @@
     isChoroplethVisible = !isChoroplethVisible;
     mapTokyo.setLayoutProperty('tokyo-population-density', 'visibility', isChoroplethVisible ? 'visible' : 'none');
   }
-  // Function to toggle the visibility of the top text
-  function toggleTopTextVisibility() {
-    isTopTextVisible = !isTopTextVisible;
-    const topTextDiv = document.getElementById('top-text');
-    topTextDiv.style.display = isTopTextVisible ? 'block' : 'none';
-  }
 
   // Function to toggle the visibility of the bottom text
   function toggleBottomTextVisibility() {
@@ -181,6 +175,25 @@
     border-radius: 0px; 
   }
 
+  .top-text {
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+  }
+
+  .bottom-text {
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+  }
   /* Style for main content container */
   .main-content {
     display: flex;
@@ -195,7 +208,6 @@
   #map-tokyo {
     flex: 1; /* Allow map container to grow and occupy remaining space */
     width: 100%; /* Ensure map container takes full width */
-    height: 70vh; /* Adjust height as needed */
     position: relative; /* Positioning context for absolute positioning */
     border-radius: 0px; 
   }
@@ -242,11 +254,10 @@
     <p>Have you ever gotten lost in a massive city and couldn't find the closest train station to get to your next destination? 
       Well, we got the solution for you! Introducing the Tokyo Map! Our motivation for this visualization is to provide the user 
       an easy-to-use map with customization, giving the user a map with plenty of digestible information while keeping it clear and understandable.
-      We provided togglable metro stations, metro lines, as well as population ridership through GeoJSON data with the click of a button; 
+      We provided togglable metro stations, metro lines, as well as population ridership through geoJSON data with the click of a button; 
       specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth. 
-      See a full walkthrough here: https://youtu.be/-xUU2ivSLd4
     </p>
-    <a href="https://youtu.be/-xUU2ivSLd4" target="_blank">https://youtu.be/-xUU2ivSLd4</a>
+    <a href="https://youtu.be/-xUU2ivSLd4" target="_blank">https://youtu.be/-xUU2ivSLd4</a>
   </div>
 
   <!-- Map container -->
@@ -262,11 +273,8 @@
       <button class="toggle-button" on:click={toggleChoroplethVisibility}>
         {isChoroplethVisible ? 'Hide Choropleth' : 'Show Choropleth'}
       </button>
-      <button class="toggle-button" on:click={toggleTopTextVisibility}>
-        {isTopTextVisible ? 'Hide Top Text' : 'Show Top Text'}
-      </button>
       <button class="toggle-button" on:click={toggleBottomTextVisibility}>
-        {isBottomTextVisible ? 'Hide Bottom Text' : 'Show Bottom Text'}
+        {isBottomTextVisible ? 'Hide Bottom Text' : 'Learn More!'}
       </button>
     </div>
 
