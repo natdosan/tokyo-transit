@@ -146,6 +146,12 @@
     isChoroplethVisible = !isChoroplethVisible;
     mapTokyo.setLayoutProperty('tokyo-population-density', 'visibility', isChoroplethVisible ? 'visible' : 'none');
   }
+  // Function to toggle the visibility of the top text
+  function toggleTopTextVisibility() {
+    isTopTextVisible = !isTopTextVisible;
+    const topTextDiv = document.getElementById('top-text');
+    topTextDiv.style.display = isTopTextVisible ? 'block' : 'none';
+  }
 
   // Function to toggle the visibility of the bottom text
   function toggleBottomTextVisibility() {
@@ -175,25 +181,6 @@
     border-radius: 0px; 
   }
 
-  .top-text {
-    padding: 20px;
-    text-align: center;
-    background-color: #222;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0px;
-  }
-
-  .bottom-text {
-    padding: 20px;
-    text-align: center;
-    background-color: #222;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0px;
-  }
   /* Style for main content container */
   .main-content {
     display: flex;
@@ -208,6 +195,7 @@
   #map-tokyo {
     flex: 1; /* Allow map container to grow and occupy remaining space */
     width: 100%; /* Ensure map container takes full width */
+    height: 70vh; /* Adjust height as needed */
     position: relative; /* Positioning context for absolute positioning */
     border-radius: 0px; 
   }
@@ -254,7 +242,7 @@
     <p>Have you ever gotten lost in a massive city and couldn't find the closest train station to get to your next destination? 
       Well, we got the solution for you! Introducing the Tokyo Map! Our motivation for this visualization is to provide the user 
       an easy-to-use map with customization, giving the user a map with plenty of digestible information while keeping it clear and understandable.
-      We provided togglable metro stations, metro lines, as well as population ridership through geoJSON data with the click of a button; 
+      We provided togglable metro stations, metro lines, as well as population ridership through GeoJSON data with the click of a button; 
       specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth. 
     </p>
   </div>
@@ -272,8 +260,11 @@
       <button class="toggle-button" on:click={toggleChoroplethVisibility}>
         {isChoroplethVisible ? 'Hide Choropleth' : 'Show Choropleth'}
       </button>
+      <button class="toggle-button" on:click={toggleTopTextVisibility}>
+        {isTopTextVisible ? 'Hide Top Text' : 'Show Top Text'}
+      </button>
       <button class="toggle-button" on:click={toggleBottomTextVisibility}>
-        {isBottomTextVisible ? 'Hide Bottom Text' : 'Learn More!'}
+        {isBottomTextVisible ? 'Hide Bottom Text' : 'Show Bottom Text'}
       </button>
     </div>
 
@@ -296,11 +287,8 @@
       and a clean user-experience. An interesting observation of the visualization is that we can understand the population density and ridership of each railway 
       station and area which helps evaluate the busyness of each station. Specifically, we designed a metric where we subtract the ratio of riders to the ward's 
       relative population density from one, which gives us a negative/positive scalar, where negative scores represent a more crowded area while positive scores
-      represent a less crowded area. We chose this compared to a log of the score because the trend in our data did not seem to be exponential. Together, the population 
-      chorepleth, railway, live traffic feed, and carefully designed metro station scores allow for a successful story to be told through the visualization. Each station is located
-      in its own ward, and has its own daily ridership statistic, but without taking into account ward's population density, it's hard to tell just how packed a station 
-      will typically be. Therefore, the positive and negative scores for each station allow a rider to predict how busy a station will be. 
-      Furthermore, the main takeaway is that we can use this metric to help users predict if their destination will be crowded and factor in commute times, which can help users to 
+       represent a less crowded area. We chose this compared to a log of the score because the trend in our data did not seem to be exponential. 
+      The main takeaway is that we can use this metric to help users predict if their destination will be crowded and factor in commute times, which can help users to 
       avoid busy stations if possible as well as help individuals with intense social anxiety avoid super crowded stations. And that is the Tokyo map!
     </p>
     <button class="toggle-button" on:click={toggleBottomTextVisibility}>
