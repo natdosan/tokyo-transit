@@ -1,0 +1,113 @@
+{
+    "Tokyo": 
+            [
+                {
+                  "name": "Ikebukuro Station",
+                  "coordinates": [139.7100, 35.7295],
+                  "line": "Marunouchi Line Yurakucho Line Fukutoshin Line",
+                  "ridership": 461392,
+                  "ward": "Toshima",
+                  "population": 301599
+                },
+                {
+                  "name": "Otemachi Station",
+                  "coordinates": [139.7652, 35.6848],
+                  "line": "Marunouchi Line Tozai Line Chiyoda Line Hanzomon Line",
+                  "ridership": 277497,
+                  "ward": "Chiyoda",
+                  "population": 66680
+                },
+                {
+                  "name": "KitaSenju Station",
+                  "coordinates": [139.7984, 35.748],
+                  "line": "Chiyoda Line",
+                  "ridership": 215800,
+                  "ward": "Adachi",
+                  "population": 695043
+                },
+                {
+                  "name": "Ginza Station",
+                  "coordinates": [139.7631, 35.6719],
+                  "line": "Ginza Line Marunouchi Line Hibiya Line",
+                  "ridership": 188770,
+                  "ward": "Chūō",
+                  "population": 169179
+                },
+                {
+                  "name": "Shinjuku Station",
+                  "coordinates": [139.7005, 35.6896],
+                  "line": "Marunouchi Line",
+                  "ridership": 180278,
+                  "ward": "Shinjuku",
+                  "population": 349385
+                },
+                {
+                  "name": "Toyosu Station",
+                  "coordinates": [139.7966, 35.6551],
+                  "line": "Yurakucho Line",
+                  "ridership": 176881,
+                  "ward": "Kōtō",
+                  "population": 524310
+                },
+                {
+                  "name": "Shimbashi Station",
+                  "coordinates": [139.7581, 35.6655],
+                  "line": "Ginza Line",
+                  "ridership": 173836,
+                  "ward": "Minato",
+                  "population": 260486
+                },
+                {
+                  "name": "Ueno Station",
+                  "coordinates": [139.7772, 35.7138],
+                  "line": "Ginza Line Hibiya Line",
+                  "ridership": 162861,
+                  "ward": "Taitō",
+                  "population": 211444
+                },
+                {
+                  "name": "Tokyo Station",
+                  "coordinates": [139.7671, 35.6814],
+                  "line": "Marunouchi Line",
+                  "ridership": 162608,
+                  "ward": "Chiyoda",
+                  "population": 66680
+                },
+                {
+                  "name": "Shibuya Station",
+                  "coordinates": [139.70199, 35.658034],
+                  "line": "Ginza Line",
+                  "ridership": 158056,
+                  "ward": "Shibuya",
+                  "population": 243883
+                }         
+    ],
+    "Osaka": [
+        {"name": "Osaka Station", "coordinates": [135.4982, 34.7025], "ridership": "2,500,000"},
+        {"name": "Umeda Station", "coordinates": [135.4988, 34.7054], "ridership": "2,400,000"},
+        {"name": "Namba Station", "coordinates": [135.5022, 34.6625], "ridership": "2,200,000"},
+        {"name": "Tennoji Station", "coordinates": [135.5185, 34.6553], "ridership": "1,800,000"},
+        {"name": "Shin-Osaka Station", "coordinates": [135.5002, 34.7335], "ridership": "1,600,000"}
+    ],
+    "Kyoto": [
+        {"name": "Kyoto Station", "coordinates": [135.7588, 34.9858], "ridership": "2,000,000"},
+        {"name": "Karasuma Station", "coordinates": [135.7612, 35.0003], "ridership": "1,500,000"},
+        {"name": "Kawaramachi Station", "coordinates": [135.7681, 35.0035], "ridership": "1,300,000"},
+        {"name": "Arashiyama Station", "coordinates": [135.6668, 35.0094], "ridership": "1,100,000"},
+        {"name": "Katsura Station", "coordinates": [135.6934, 34.9824], "ridership": "900,000"}
+    ],
+    "Nagoya": [
+        {"name": "Nagoya Station", "coordinates": [136.8815, 35.1709], "ridership": "2,300,000"},
+        {"name": "Kanayama Station", "coordinates": [136.9001, 35.1568], "ridership": "1,800,000"},
+        {"name": "Sakae Station", "coordinates": [136.9085, 35.1681], "ridership": "1,500,000"},
+        {"name": "Jingu-mae Station", "coordinates": [136.9079, 35.1532], "ridership": "1,200,000"},
+        {"name": "Fushimi Station", "coordinates": [136.8836, 35.1649], "ridership": "1,000,000"}
+    ],
+    "Hiroshima": [
+        {"name": "Hiroshima Station", "coordinates": [132.4522, 34.3974], "ridership": "1,200,000"},
+        {"name": "Yokogawa Station", "coordinates": [132.4561, 34.4023], "ridership": "850,000"},
+        {"name": "Hacchobori Station", "coordinates": [132.4656, 34.3969], "ridership": "640,000"},
+        {"name": "Hiroden-miyajima-guchi Station", "coordinates": [132.3507, 34.3481], "ridership": "500,000"},
+        {"name": "Shiraichi Station", "coordinates": [132.5113, 34.3669], "ridership": "300,000"}
+    ]
+}      
