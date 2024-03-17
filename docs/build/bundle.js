@@ -525,7 +525,7 @@ var app = (function () {
 
     	let t12_value = (/*isBottomTextVisible*/ ctx[4]
     	? 'Hide Bottom Text'
-    	: 'Show Bottom Text') + "";
+    	: 'Learn More!') + "";
 
     	let t12;
     	let t13;
@@ -549,7 +549,7 @@ var app = (function () {
 
     	let t28_value = (/*isBottomTextVisible*/ ctx[4]
     	? 'Hide Bottom Text'
-    	: 'Show Bottom Text') + "";
+    	: 'Learn More!') + "";
 
     	let t28;
     	let div10_style_value;
@@ -750,11 +750,11 @@ var app = (function () {
 
     			if (dirty & /*isBottomTextVisible*/ 16 && t12_value !== (t12_value = (/*isBottomTextVisible*/ ctx[4]
     			? 'Hide Bottom Text'
-    			: 'Show Bottom Text') + "")) set_data_dev(t12, t12_value);
+    			: 'Learn More!') + "")) set_data_dev(t12, t12_value);
 
     			if (dirty & /*isBottomTextVisible*/ 16 && t28_value !== (t28_value = (/*isBottomTextVisible*/ ctx[4]
     			? 'Hide Bottom Text'
-    			: 'Show Bottom Text') + "")) set_data_dev(t28, t28_value);
+    			: 'Learn More!') + "")) set_data_dev(t28, t28_value);
 
     			if (dirty & /*isBottomTextVisible*/ 16 && div10_style_value !== (div10_style_value = /*isBottomTextVisible*/ ctx[4]
     			? 'display: block;'
