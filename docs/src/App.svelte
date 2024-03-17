@@ -250,7 +250,7 @@
 <div class="main-content">
   <!-- Top text -->
   <div id="top-text" class="top-text" style="{isTopTextVisible ? 'display: block;' : 'display: none;'}">
-    <h1>Welcome to Tokyo Map</h1>
+    <h1>Let's Explore Tokyo's Transportation and Population!</h1>
     <p>Have you ever gotten lost in a massive city and couldn't find the closest train station to get to your next destination? 
       Well, we got the solution for you! Introducing the Tokyo Map! Our motivation for this visualization is to provide the user 
       an easy-to-use map with customization, giving the user a map with plenty of digestible information while keeping it clear and understandable.
