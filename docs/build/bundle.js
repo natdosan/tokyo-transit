@@ -485,45 +485,38 @@ var app = (function () {
     	let h1;
     	let t1;
     	let p0;
-    	let div0_style_value;
     	let t3;
+    	let a;
+    	let t5;
     	let div9;
     	let div1;
     	let button0;
 
-    	let t4_value = (/*isRailwayVisible*/ ctx[0]
+    	let t6_value = (/*isRailwayVisible*/ ctx[0]
     	? 'Hide Railway Lines'
     	: 'Show Railway Lines') + "";
 
-    	let t4;
-    	let t5;
+    	let t6;
+    	let t7;
     	let button1;
 
-    	let t6_value = (/*areStationsVisible*/ ctx[1]
+    	let t8_value = (/*areStationsVisible*/ ctx[1]
     	? 'Hide Stations'
     	: 'Show Stations') + "";
 
-    	let t6;
-    	let t7;
+    	let t8;
+    	let t9;
     	let button2;
 
-    	let t8_value = (/*isChoroplethVisible*/ ctx[2]
+    	let t10_value = (/*isChoroplethVisible*/ ctx[2]
     	? 'Hide Choropleth'
     	: 'Show Choropleth') + "";
 
-    	let t8;
-    	let t9;
-    	let button3;
-
-    	let t10_value = (/*isTopTextVisible*/ ctx[3]
-    	? 'Hide Top Text'
-    	: 'Show Top Text') + "";
-
     	let t10;
     	let t11;
-    	let button4;
+    	let button3;
 
-    	let t12_value = (/*isBottomTextVisible*/ ctx[4]
+    	let t12_value = (/*isBottomTextVisible*/ ctx[3]
     	? 'Hide Bottom Text'
     	: 'Learn More!') + "";
 
@@ -545,11 +538,11 @@ var app = (function () {
     	let div10;
     	let p1;
     	let t27;
-    	let button5;
+    	let button4;
 
-    	let t28_value = (/*isBottomTextVisible*/ ctx[4]
+    	let t28_value = (/*isBottomTextVisible*/ ctx[3]
     	? 'Hide Bottom Text'
-    	: 'Learn More!') + "";
+    	: 'Show Bottom Text') + "";
 
     	let t28;
     	let div10_style_value;
@@ -564,25 +557,23 @@ var app = (function () {
     			h1.textContent = "Let's Explore Tokyo's Transportation and Population!";
     			t1 = space();
     			p0 = element("p");
-    			p0.textContent = "Have you ever gotten lost in a massive city and couldn't find the closest train station to get to your next destination? \n      Well, we got the solution for you! Introducing the Tokyo Map! Our motivation for this visualization is to provide the user \n      an easy-to-use map with customization, giving the user a map with plenty of digestible information while keeping it clear and understandable.\n      We provided togglable metro stations, metro lines, as well as population ridership through geoJSON data with the click of a button; \n      specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth. See a full walkthrough here: https://youtu.be/-xUU2ivSLd4";
-    			t3 = space();
-                a = element("a");
+    			p0.textContent = "Have you ever gotten lost in a massive city and couldn't find the closest train station to get to your next destination? \n      Well, we got the solution for you! Introducing the Tokyo Map! Our motivation for this visualization is to provide the user \n      an easy-to-use map with customization, giving the user a map with plenty of digestible information while keeping it clear and understandable.\n      We provided togglable metro stations, metro lines, as well as population ridership through geoJSON data with the click of a button; \n      specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth.";
+    			t3 = text("\n    ");
+    			a = element("a");
     			a.textContent = "https://youtu.be/-xUU2ivSLd4";
+    			t5 = space();
     			div9 = element("div");
     			div1 = element("div");
     			button0 = element("button");
-    			t4 = text(t4_value);
-    			t5 = space();
-    			button1 = element("button");
     			t6 = text(t6_value);
     			t7 = space();
-    			button2 = element("button");
+    			button1 = element("button");
     			t8 = text(t8_value);
     			t9 = space();
-    			button3 = element("button");
+    			button2 = element("button");
     			t10 = text(t10_value);
     			t11 = space();
-    			button4 = element("button");
+    			button3 = element("button");
     			t12 = text(t12_value);
     			t13 = space();
     			div8 = element("div");
@@ -606,69 +597,69 @@ var app = (function () {
     			t25 = space();
     			div10 = element("div");
     			p1 = element("p");
-                p1.textContent = "Using a choropleth allows an easy-to-interpret representation of Tokyo's population density by ward, making it unique, promoting exploration throughout the city \n      without worry. Additionally, it allows the user to toggle between showing and hiding the 10 most popular railway stations and lines, allowing for customizability \n      and a clean user-experience. An interesting observation of the visualization is that we can understand the population density and ridership of each railway \n      station and area which helps evaluate the busyness of each station. Specifically, we designed a metric where we subtract the ratio of riders to the ward's \n      relative population density from one, which gives us a negative/positive scalar, where negative scores represent a more crowded area while positive scores\n      represent a less crowded area. We chose this compared to a log of the score because the trend in our data did not seem to be exponential. Together, the population \n      chorepleth, railway, live traffic feed, and carefully designed metro station scores allow for a successful story to be told through the visualization. Each station is located\n      in its own ward, and has its own daily ridership statistic, but without taking into account ward's population density, it's hard to tell just how packed a station \n      will typically be. Therefore, the positive and negative scores for each station allow a rider to predict how busy a station will be. \n      Furthermore, the main takeaway is that we can use this metric to help users predict if their destination will be crowded and factor in commute times, which can help users to \n      avoid busy stations if possible as well as help individuals with intense social anxiety avoid super crowded stations. And that is the Tokyo map!";    			t27 = space();
-    			button5 = element("button");
+    			p1.textContent = "Using a choropleth allows an easy-to-interpret representation of Tokyo's population density by ward, making it unique, promoting exploration throughout the city \n      without worry. Additionally, it allows the user to toggle between showing and hiding the 10 most popular railway stations and lines, allowing for customizability \n      and a clean user-experience. An interesting observation of the visualization is that we can understand the population density and ridership of each railway \n      station and area which helps evaluate the busyness of each station. Specifically, we designed a metric where we subtract the ratio of riders to the ward's \n      relative population density from one, which gives us a negative/positive scalar, where negative scores represent a more crowded area while positive scores\n      represent a less crowded area. We chose this compared to a log of the score because the trend in our data did not seem to be exponential. Together, the population \n      chorepleth, railway, live traffic feed, and carefully designed metro station scores allow for a successful story to be told through the visualization. Each station is located\n      in its own ward, and has its own daily ridership statistic, but without taking into account ward's population density, it's hard to tell just how packed a station \n      will typically be. Therefore, the positive and negative scores for each station allow a rider to predict how busy a station will be. \n      Furthermore, the main takeaway is that we can use this metric to help users predict if their destination will be crowded and factor in commute times, which can help users to \n      avoid busy stations if possible as well as help individuals with intense social anxiety avoid super crowded stations. And that is the Tokyo map!";
+    			t27 = space();
+    			button4 = element("button");
     			t28 = text(t28_value);
-    			add_location(h1, file, 240, 4, 7597);
-    			add_location(p0, file, 241, 4, 7631);
-                attr_dev(a, "href", "https://youtu.be/-xUU2ivSLd4");
+    			add_location(h1, file, 252, 4, 7715);
+    			add_location(p0, file, 253, 4, 7781);
+    			attr_dev(a, "href", "https://youtu.be/-xUU2ivSLd4");
     			attr_dev(a, "target", "_blank");
-                add_location(a, file, 259, 4, 8494);
+    			add_location(a, file, 259, 4, 8494);
     			attr_dev(div0, "id", "top-text");
-    			attr_dev(div0, "class", "top-text svelte-1197mnk");
-    			attr_dev(div0, "style", div0_style_value = /*isTopTextVisible*/ ctx[3]
+    			attr_dev(div0, "class", "top-text svelte-1777uii");
+
+    			attr_dev(div0, "style", /*isTopTextVisible*/ ctx[4]
     			? 'display: block;'
     			: 'display: none;');
 
-    			add_location(div0, file, 239, 2, 7490);
-    			attr_dev(button0, "class", "toggle-button svelte-1197mnk");
-    			add_location(button0, file, 253, 6, 8476);
-    			attr_dev(button1, "class", "toggle-button svelte-1197mnk");
-    			add_location(button1, file, 256, 6, 8637);
-    			attr_dev(button2, "class", "toggle-button svelte-1197mnk");
-    			add_location(button2, file, 259, 6, 8790);
-    			attr_dev(button3, "class", "toggle-button svelte-1197mnk");
-    			add_location(button3, file, 262, 6, 8951);
-    			attr_dev(button4, "class", "toggle-button svelte-1197mnk");
-    			add_location(button4, file, 265, 6, 9102);
-    			attr_dev(div1, "class", "toggle-button-container svelte-1197mnk");
-    			add_location(div1, file, 252, 4, 8432);
-    			attr_dev(div2, "class", "legend-item svelte-1197mnk");
+    			add_location(div0, file, 251, 2, 7608);
+    			attr_dev(button0, "class", "toggle-button svelte-1777uii");
+    			add_location(button0, file, 266, 6, 8718);
+    			attr_dev(button1, "class", "toggle-button svelte-1777uii");
+    			add_location(button1, file, 269, 6, 8879);
+    			attr_dev(button2, "class", "toggle-button svelte-1777uii");
+    			add_location(button2, file, 272, 6, 9032);
+    			attr_dev(button3, "class", "toggle-button svelte-1777uii");
+    			add_location(button3, file, 275, 6, 9193);
+    			attr_dev(div1, "class", "toggle-button-container svelte-1777uii");
+    			add_location(div1, file, 265, 4, 8674);
+    			attr_dev(div2, "class", "legend-item svelte-1777uii");
     			set_style(div2, "background-color", "#ffffff");
-    			add_location(div2, file, 271, 6, 9302);
-    			attr_dev(div3, "class", "legend-item svelte-1197mnk");
+    			add_location(div2, file, 281, 6, 9388);
+    			attr_dev(div3, "class", "legend-item svelte-1777uii");
     			set_style(div3, "background-color", "#614144");
-    			add_location(div3, file, 272, 6, 9376);
-    			attr_dev(div4, "class", "legend-item svelte-1197mnk");
+    			add_location(div3, file, 282, 6, 9462);
+    			attr_dev(div4, "class", "legend-item svelte-1777uii");
     			set_style(div4, "background-color", "#802A37");
-    			add_location(div4, file, 273, 6, 9456);
-    			attr_dev(div5, "class", "legend-item svelte-1197mnk");
+    			add_location(div4, file, 283, 6, 9542);
+    			attr_dev(div5, "class", "legend-item svelte-1777uii");
     			set_style(div5, "background-color", "#A51C2A");
-    			add_location(div5, file, 274, 6, 9536);
-    			attr_dev(div6, "class", "legend-item svelte-1197mnk");
+    			add_location(div5, file, 284, 6, 9622);
+    			attr_dev(div6, "class", "legend-item svelte-1777uii");
     			set_style(div6, "background-color", "#DE0D0D");
-    			add_location(div6, file, 275, 6, 9616);
-    			attr_dev(div7, "class", "legend-item svelte-1197mnk");
+    			add_location(div6, file, 285, 6, 9702);
+    			attr_dev(div7, "class", "legend-item svelte-1777uii");
     			set_style(div7, "background-color", "#FF9641");
-    			add_location(div7, file, 276, 6, 9696);
-    			attr_dev(div8, "class", "legend svelte-1197mnk");
-    			add_location(div8, file, 270, 4, 9275);
+    			add_location(div7, file, 286, 6, 9782);
+    			attr_dev(div8, "class", "legend svelte-1777uii");
+    			add_location(div8, file, 280, 4, 9361);
     			attr_dev(div9, "id", "map-tokyo");
-    			attr_dev(div9, "class", "svelte-1197mnk");
-    			add_location(div9, file, 250, 2, 8377);
-    			add_location(p1, file, 284, 4, 9936);
-    			attr_dev(button5, "class", "toggle-button svelte-1197mnk");
-    			add_location(button5, file, 293, 4, 11234);
+    			attr_dev(div9, "class", "svelte-1777uii");
+    			add_location(div9, file, 263, 2, 8619);
+    			add_location(p1, file, 294, 4, 10022);
+    			attr_dev(button4, "class", "toggle-button svelte-1777uii");
+    			add_location(button4, file, 306, 4, 11848);
     			attr_dev(div10, "id", "bottom-text");
-    			attr_dev(div10, "class", "bottom-text svelte-1197mnk");
+    			attr_dev(div10, "class", "bottom-text svelte-1777uii");
 
-    			attr_dev(div10, "style", div10_style_value = /*isBottomTextVisible*/ ctx[4]
+    			attr_dev(div10, "style", div10_style_value = /*isBottomTextVisible*/ ctx[3]
     			? 'display: block;'
     			: 'display: none;');
 
-    			add_location(div10, file, 283, 2, 9820);
-    			attr_dev(div11, "class", "main-content svelte-1197mnk");
-    			add_location(div11, file, 237, 0, 7441);
+    			add_location(div10, file, 293, 2, 9906);
+    			attr_dev(div11, "class", "main-content svelte-1777uii");
+    			add_location(div11, file, 249, 0, 7559);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -679,23 +670,22 @@ var app = (function () {
     			append_dev(div0, h1);
     			append_dev(div0, t1);
     			append_dev(div0, p0);
-    			append_dev(div11, t3);
+    			append_dev(div0, t3);
+    			append_dev(div0, a);
+    			append_dev(div11, t5);
     			append_dev(div11, div9);
     			append_dev(div9, div1);
     			append_dev(div1, button0);
-    			append_dev(button0, t4);
-    			append_dev(div1, t5);
-    			append_dev(div1, button1);
-    			append_dev(button1, t6);
+    			append_dev(button0, t6);
     			append_dev(div1, t7);
-    			append_dev(div1, button2);
-    			append_dev(button2, t8);
+    			append_dev(div1, button1);
+    			append_dev(button1, t8);
     			append_dev(div1, t9);
-    			append_dev(div1, button3);
-    			append_dev(button3, t10);
+    			append_dev(div1, button2);
+    			append_dev(button2, t10);
     			append_dev(div1, t11);
-    			append_dev(div1, button4);
-    			append_dev(button4, t12);
+    			append_dev(div1, button3);
+    			append_dev(button3, t12);
     			append_dev(div9, t13);
     			append_dev(div9, div8);
     			append_dev(div8, div2);
@@ -713,54 +703,43 @@ var app = (function () {
     			append_dev(div11, div10);
     			append_dev(div10, p1);
     			append_dev(div10, t27);
-    			append_dev(div10, button5);
-    			append_dev(button5, t28);
+    			append_dev(div10, button4);
+    			append_dev(button4, t28);
 
     			if (!mounted) {
     				dispose = [
     					listen_dev(button0, "click", /*toggleRailwayVisibility*/ ctx[5], false, false, false, false),
     					listen_dev(button1, "click", /*toggleStationVisibility*/ ctx[6], false, false, false, false),
     					listen_dev(button2, "click", /*toggleChoroplethVisibility*/ ctx[7], false, false, false, false),
-    					listen_dev(button3, "click", /*toggleTopTextVisibility*/ ctx[8], false, false, false, false),
-    					listen_dev(button4, "click", /*toggleBottomTextVisibility*/ ctx[9], false, false, false, false),
-    					listen_dev(button5, "click", /*toggleBottomTextVisibility*/ ctx[9], false, false, false, false)
+    					listen_dev(button3, "click", /*toggleBottomTextVisibility*/ ctx[8], false, false, false, false),
+    					listen_dev(button4, "click", /*toggleBottomTextVisibility*/ ctx[8], false, false, false, false)
     				];
 
     				mounted = true;
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*isTopTextVisible*/ 8 && div0_style_value !== (div0_style_value = /*isTopTextVisible*/ ctx[3]
-    			? 'display: block;'
-    			: 'display: none;')) {
-    				attr_dev(div0, "style", div0_style_value);
-    			}
-
-    			if (dirty & /*isRailwayVisible*/ 1 && t4_value !== (t4_value = (/*isRailwayVisible*/ ctx[0]
+    			if (dirty & /*isRailwayVisible*/ 1 && t6_value !== (t6_value = (/*isRailwayVisible*/ ctx[0]
     			? 'Hide Railway Lines'
-    			: 'Show Railway Lines') + "")) set_data_dev(t4, t4_value);
+    			: 'Show Railway Lines') + "")) set_data_dev(t6, t6_value);
 
-    			if (dirty & /*areStationsVisible*/ 2 && t6_value !== (t6_value = (/*areStationsVisible*/ ctx[1]
+    			if (dirty & /*areStationsVisible*/ 2 && t8_value !== (t8_value = (/*areStationsVisible*/ ctx[1]
     			? 'Hide Stations'
-    			: 'Show Stations') + "")) set_data_dev(t6, t6_value);
+    			: 'Show Stations') + "")) set_data_dev(t8, t8_value);
 
-    			if (dirty & /*isChoroplethVisible*/ 4 && t8_value !== (t8_value = (/*isChoroplethVisible*/ ctx[2]
+    			if (dirty & /*isChoroplethVisible*/ 4 && t10_value !== (t10_value = (/*isChoroplethVisible*/ ctx[2]
     			? 'Hide Choropleth'
-    			: 'Show Choropleth') + "")) set_data_dev(t8, t8_value);
+    			: 'Show Choropleth') + "")) set_data_dev(t10, t10_value);
 
-    			if (dirty & /*isTopTextVisible*/ 8 && t10_value !== (t10_value = (/*isTopTextVisible*/ ctx[3]
-    			? 'Hide Top Text'
-    			: 'Show Top Text') + "")) set_data_dev(t10, t10_value);
-
-    			if (dirty & /*isBottomTextVisible*/ 16 && t12_value !== (t12_value = (/*isBottomTextVisible*/ ctx[4]
+    			if (dirty & /*isBottomTextVisible*/ 8 && t12_value !== (t12_value = (/*isBottomTextVisible*/ ctx[3]
     			? 'Hide Bottom Text'
     			: 'Learn More!') + "")) set_data_dev(t12, t12_value);
 
-    			if (dirty & /*isBottomTextVisible*/ 16 && t28_value !== (t28_value = (/*isBottomTextVisible*/ ctx[4]
+    			if (dirty & /*isBottomTextVisible*/ 8 && t28_value !== (t28_value = (/*isBottomTextVisible*/ ctx[3]
     			? 'Hide Bottom Text'
-    			: 'Learn More!') + "")) set_data_dev(t28, t28_value);
+    			: 'Show Bottom Text') + "")) set_data_dev(t28, t28_value);
 
-    			if (dirty & /*isBottomTextVisible*/ 16 && div10_style_value !== (div10_style_value = /*isBottomTextVisible*/ ctx[4]
+    			if (dirty & /*isBottomTextVisible*/ 8 && div10_style_value !== (div10_style_value = /*isBottomTextVisible*/ ctx[3]
     			? 'display: block;'
     			: 'display: none;')) {
     				attr_dev(div10, "style", div10_style_value);
@@ -934,16 +913,9 @@ var app = (function () {
     		mapTokyo.setLayoutProperty('tokyo-population-density', 'visibility', isChoroplethVisible ? 'visible' : 'none');
     	}
 
-    	// Function to toggle the visibility of the top text
-    	function toggleTopTextVisibility() {
-    		$$invalidate(3, isTopTextVisible = !isTopTextVisible);
-    		const topTextDiv = document.getElementById('top-text');
-    		topTextDiv.style.display = isTopTextVisible ? 'block' : 'none';
-    	}
-
     	// Function to toggle the visibility of the bottom text
     	function toggleBottomTextVisibility() {
-    		$$invalidate(4, isBottomTextVisible = !isBottomTextVisible);
+    		$$invalidate(3, isBottomTextVisible = !isBottomTextVisible);
     		const bottomTextDiv = document.getElementById('bottom-text');
     		bottomTextDiv.style.display = isBottomTextVisible ? 'block' : 'none';
     	}
@@ -967,7 +939,6 @@ var app = (function () {
     		toggleRailwayVisibility,
     		toggleStationVisibility,
     		toggleChoroplethVisibility,
-    		toggleTopTextVisibility,
     		toggleBottomTextVisibility
     	});
 
@@ -977,8 +948,8 @@ var app = (function () {
     		if ('areStationsVisible' in $$props) $$invalidate(1, areStationsVisible = $$props.areStationsVisible);
     		if ('isChoroplethVisible' in $$props) $$invalidate(2, isChoroplethVisible = $$props.isChoroplethVisible);
     		if ('stationMarkers' in $$props) stationMarkers = $$props.stationMarkers;
-    		if ('isTopTextVisible' in $$props) $$invalidate(3, isTopTextVisible = $$props.isTopTextVisible);
-    		if ('isBottomTextVisible' in $$props) $$invalidate(4, isBottomTextVisible = $$props.isBottomTextVisible);
+    		if ('isTopTextVisible' in $$props) $$invalidate(4, isTopTextVisible = $$props.isTopTextVisible);
+    		if ('isBottomTextVisible' in $$props) $$invalidate(3, isBottomTextVisible = $$props.isBottomTextVisible);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -989,12 +960,11 @@ var app = (function () {
     		isRailwayVisible,
     		areStationsVisible,
     		isChoroplethVisible,
-    		isTopTextVisible,
     		isBottomTextVisible,
+    		isTopTextVisible,
     		toggleRailwayVisibility,
     		toggleStationVisibility,
     		toggleChoroplethVisibility,
-    		toggleTopTextVisibility,
     		toggleBottomTextVisibility
     	];
     }
