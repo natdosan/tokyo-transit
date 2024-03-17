@@ -257,7 +257,7 @@
       We provided togglable metro stations, metro lines, as well as population ridership through geoJSON data with the click of a button; 
       specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth. 
     </p>
-    <a href="https://youtu.be/-xUU2ivSLd4" target="_blank">https://youtu.be/-xUU2ivSLd4</a>
+    <a href="https://www.youtube.com/watch?v=-xUU2ivSLd4" target="_blank">https://www.youtube.com/watch?v=-xUU2ivSLd4</a>
   </div>
 
   <!-- Map container -->
