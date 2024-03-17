@@ -246,6 +246,7 @@
       specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth. 
       See a full walkthrough here: https://youtu.be/-xUU2ivSLd4
     </p>
+    <a href="https://youtu.be/-xUU2ivSLd4" target="_blank">https://youtu.be/-xUU2ivSLd4</a>
   </div>
 
   <!-- Map container -->
