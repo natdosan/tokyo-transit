@@ -244,6 +244,7 @@
       an easy-to-use map with customization, giving the user a map with plenty of digestible information while keeping it clear and understandable.
       We provided togglable metro stations, metro lines, as well as population ridership through GeoJSON data with the click of a button; 
       specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth. 
+      See a full walkthrough here: https://youtu.be/-xUU2ivSLd4
     </p>
   </div>
 
