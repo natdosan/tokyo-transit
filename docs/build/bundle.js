@@ -566,6 +566,8 @@ var app = (function () {
     			p0 = element("p");
     			p0.textContent = "Have you ever gotten lost in a massive city and couldn't find the closest train station to get to your next destination? \n      Well, we got the solution for you! Introducing the Tokyo Map! Our motivation for this visualization is to provide the user \n      an easy-to-use map with customization, giving the user a map with plenty of digestible information while keeping it clear and understandable.\n      We provided togglable metro stations, metro lines, as well as population ridership through geoJSON data with the click of a button; \n      specifically, popularly used maps exclude ridership and population data, but in our map, it has a togglable feature layer in the form of a choropleth. See a full walkthrough here: https://youtu.be/-xUU2ivSLd4";
     			t3 = space();
+                a = element("a");
+    			a.textContent = "https://youtu.be/-xUU2ivSLd4";
     			div9 = element("div");
     			div1 = element("div");
     			button0 = element("button");
@@ -609,9 +611,11 @@ var app = (function () {
     			t28 = text(t28_value);
     			add_location(h1, file, 240, 4, 7597);
     			add_location(p0, file, 241, 4, 7631);
+                attr_dev(a, "href", "https://youtu.be/-xUU2ivSLd4");
+    			attr_dev(a, "target", "_blank");
+                add_location(a, file, 259, 4, 8494);
     			attr_dev(div0, "id", "top-text");
     			attr_dev(div0, "class", "top-text svelte-1197mnk");
-
     			attr_dev(div0, "style", div0_style_value = /*isTopTextVisible*/ ctx[3]
     			? 'display: block;'
     			: 'display: none;');
