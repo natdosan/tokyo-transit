@@ -287,8 +287,11 @@
       and a clean user-experience. An interesting observation of the visualization is that we can understand the population density and ridership of each railway 
       station and area which helps evaluate the busyness of each station. Specifically, we designed a metric where we subtract the ratio of riders to the ward's 
       relative population density from one, which gives us a negative/positive scalar, where negative scores represent a more crowded area while positive scores
-       represent a less crowded area. We chose this compared to a log of the score because the trend in our data did not seem to be exponential. 
-      The main takeaway is that we can use this metric to help users predict if their destination will be crowded and factor in commute times, which can help users to 
+      represent a less crowded area. We chose this compared to a log of the score because the trend in our data did not seem to be exponential. Together, the population 
+      chorepleth, railway, live traffic feed, and carefully designed metro station scores allow for a successful story to be told through the visualization. Each station is located
+      in its own ward, and has its own daily ridership statistic, but without taking into account ward's population density, it's hard to tell just how packed a station 
+      will typically be. Therefore, the positive and negative scores for each station allow a rider to predict how busy a station will be. 
+      Furthermore, the main takeaway is that we can use this metric to help users predict if their destination will be crowded and factor in commute times, which can help users to 
       avoid busy stations if possible as well as help individuals with intense social anxiety avoid super crowded stations. And that is the Tokyo map!
     </p>
     <button class="toggle-button" on:click={toggleBottomTextVisibility}>
